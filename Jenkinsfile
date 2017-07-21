@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 /*
 language: go
@@ -14,3 +15,8 @@ node {
     sh './go test -v ./..'
   }
 }
+=======
+node {
+    echo 'Hello FreeWheel!'
+}
+>>>>>>> 922efbd991cce3ccadb290207f9b078aeb785282
