@@ -10,6 +10,13 @@ script:
  - go test -v ./...
 */
 #!/bin/bash
+node{
+  stage('Dockerfile Envirionment'){
+    docker image build -t rand .
+//    go run ./main.go
+    docker container run -p 4000:8080 --name randnum --rm rand 
+  }
+}
 node {
   stage ('Unit Test') {
     sh './go test -v ./..'

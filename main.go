@@ -11,7 +11,7 @@ func main() {
 	r := gin.Default()
 	r.GET("/rand", Rand)
 	//r.GET("/", Rand)
-	r.Run(":8080")
+	r.Run(":8888")
 }
 
 func Rand(c *gin.Context) {
