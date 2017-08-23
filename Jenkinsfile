@@ -19,7 +19,8 @@ node{
 }
 node {
   stage ('Unit Test') {
-    sh './go test -v ./..'
+//    sh './go test -v ./..'
+      sh 'go test'
   }
 }
 =======
